@@ -4,6 +4,8 @@
   "description": "weather application using React, Express, PostgreSQL, Node.js, and deploy the final app to the Heroku cloud platform",
   "main": "index.js",
   "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm start --prefix client",
     "server": "nodemon server"
   },
   "repository": {
